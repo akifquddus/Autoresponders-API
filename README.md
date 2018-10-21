@@ -7,6 +7,8 @@ PHP Library providing API Endpoints for Aweber, IContact, GetResponse and Mailch
 **User can generate his App Key from this URL:**
 https://auth.aweber.com/1.0/oauth/authorize_app/2ec81ef1
 
+**Frontend Form:** http://prntscr.com/l8kx0g
+
 Send a POST Request to:
 http://serverurl.com/autoresponder/aweber_connect
 
@@ -82,6 +84,8 @@ http://serverurl.com/autoresponder/get_aweber_lists
 **User can generate his App Key from this URL:** 
 https://app.getresponse.com/api
 
+**Frontend Form:** http://prntscr.com/l8kx9h
+
 Send a POST Request to:
 http://serverurl.com/autoresponder/getresponse_connect_lists
 
@@ -119,6 +123,8 @@ If the response is success, then API Key is safe to be stored in Database, other
 
 **User can generate his App Key from this URL:**
 https://us8.admin.mailchimp.com/account/api/
+
+**Frontend Form:** http://prntscr.com/l8kxo0
 
 Send a POST Request to:
 http://serverurl.com/autoresponder/mailchimp_connect_lists
