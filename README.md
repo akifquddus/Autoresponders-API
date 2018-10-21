@@ -27,8 +27,7 @@ http://serverurl.com/autoresponder/aweber_connect
     "access_key": "Ag2mEsZJNMSMqCFCqg0qJUfI",
     "access_secret": "Bzxi2cWetfzkOn2hdMzVAPE7OuCsZ7BOCO1WaiIz",
     "consumer_key": "AzwEvS8G71NE5KRGV20hO4XH",
-    "consumer_secret": "23chLovyne3LiXTIdFWOkZ7OHyZTUcPedLnDMjTG",
-    "alist": null
+    "consumer_secret": "23chLovyne3LiXTIdFWOkZ7OHyZTUcPedLnDMjTG"
 }
 ```
 **_The whole return Data needs to be stored in Database for future use. The access_code is saved only for reference, it is not useable more than once. Rest four attributes will be used in all further requests._**
