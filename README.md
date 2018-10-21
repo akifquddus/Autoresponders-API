@@ -29,6 +29,7 @@ http://serverurl.com/autoresponder/aweber_connect
     "alist": null
 }
 ```
+*The whole return Data needs to be stored in Database for future use. The access_code is saved only for reference, it is not useable more than once. Rest four attributes will be used in all further requests.*
 
 ### Error
 
@@ -65,11 +66,50 @@ http://serverurl.com/autoresponder/aweber_connect
     }
 }
 ```
+
 ### Error
 
 ```json
 {
     "success": false,
     "message": "Invalid signature"
+}
+```
+
+## Connect GetResponse
+There is one method for both GetResponse Connection and Fetching Lists
+
+User can generate his App Key from this URL: 
+https://app.getresponse.com/api
+
+Send a POST Request to:
+http://serverurl.com/autoresponder/getresponse_connect_lists
+
+```php
+{
+    'key': '5187caf7bc233b3356283541cc7835e3'
+}
+```
+*For GetResponse, Just API Key needs to be stored in Database for further use.
+If the response is success, then API Key is safe to be stored in Database, otherwise a proper message can be displayed to User.*
+
+### Success
+
+```json
+{
+    "success": true,
+    "message": "Lists Retrieved Successfully",
+    "lists": {
+        "atHvP": "akifquddus"
+    }
+}
+```
+
+### Error
+
+```json
+{
+    "success": false,
+    "message": "Please add lists to your account"
 }
 ```
