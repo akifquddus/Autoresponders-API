@@ -4,7 +4,7 @@ PHP Library providing API Endpoints for Aweber, IContact, GetResponse and Mailch
 
 ## Connect Aweber
 
-User can generate his App Key from this URL: 
+**User can generate his App Key from this URL:**
 https://auth.aweber.com/1.0/oauth/authorize_app/2ec81ef1
 
 Send a POST Request to:
@@ -29,7 +29,7 @@ http://serverurl.com/autoresponder/aweber_connect
     "alist": null
 }
 ```
-*The whole return Data needs to be stored in Database for future use. The access_code is saved only for reference, it is not useable more than once. Rest four attributes will be used in all further requests.*
+**_The whole return Data needs to be stored in Database for future use. The access_code is saved only for reference, it is not useable more than once. Rest four attributes will be used in all further requests._**
 
 ### Error
 
@@ -77,9 +77,9 @@ http://serverurl.com/autoresponder/aweber_connect
 ```
 
 ## Connect GetResponse
-There is one method for both GetResponse Connection and Fetching Lists
+ - There is one method for both GetResponse Connection and Fetching Lists
 
-User can generate his App Key from this URL: 
+**User can generate his App Key from this URL:** 
 https://app.getresponse.com/api
 
 Send a POST Request to:
@@ -90,8 +90,8 @@ http://serverurl.com/autoresponder/getresponse_connect_lists
     'key': '5187caf7bc233b3356283541cc7835e3'
 }
 ```
-*For GetResponse, Just API Key needs to be stored in Database for further use.
-If the response is success, then API Key is safe to be stored in Database, otherwise a proper message can be displayed to User.*
+**_For GetResponse, Just API Key needs to be stored in Database for further use.
+If the response is success, then API Key is safe to be stored in Database, otherwise a proper message can be displayed to User._**
 
 ### Success
 
@@ -117,7 +117,7 @@ If the response is success, then API Key is safe to be stored in Database, other
 ## Connect Mailchimp
  - There is one method for both Mailchimp Connection and Fetching Lists
 
-User can generate his App Key from this URL: 
+**User can generate his App Key from this URL:**
 https://us8.admin.mailchimp.com/account/api/
 
 Send a POST Request to:
@@ -128,7 +128,7 @@ http://serverurl.com/autoresponder/mailchimp_connect_lists
     'key': '25d41b5ff4c334e6a3af6b5c5c3d1b02-us15'
 }
 ```
-*Same as GetResponse, if the response is Success, just need to save this API Key for further operations.*
+**_Same as GetResponse, if the response is Success, just need to save this API Key for further operations._**
 
 ### Success
 ```json
