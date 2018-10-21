@@ -113,3 +113,42 @@ If the response is success, then API Key is safe to be stored in Database, other
     "message": "Please add lists to your account"
 }
 ```
+
+## Connect Mailchimp
+ - There is one method for both Mailchimp Connection and Fetching Lists
+
+User can generate his App Key from this URL: 
+https://us8.admin.mailchimp.com/account/api/
+
+Send a POST Request to:
+http://serverurl.com/autoresponder/mailchimp_connect_lists
+
+```php
+{
+    'key': '25d41b5ff4c334e6a3af6b5c5c3d1b02-us15'
+}
+```
+*Same as GetResponse, if the response is Success, just need to save this API Key for further operations.*
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Lists Retrieved Successfully",
+    "lists": {
+        "8ebfb037f1": "Feed-Back Form Cleaned",
+        "1e280e14d6": "CT Customers",
+        "37fd37edbd": "CinchTweet - Frontend Subscription",
+        "50aa717172": "CT-Affiliates"
+    }
+}
+```
+
+### Error
+```json
+{
+    "success": false,
+    "message": "Could not retrieve lists"
+}
+```
+
