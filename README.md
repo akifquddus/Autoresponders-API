@@ -42,7 +42,7 @@ http://serverurl.com/autoresponder/aweber_connect
 
 ## Get Aweber Lists
 Send a POST Request to:
-http://serverurl.com/autoresponder/aweber_connect
+http://serverurl.com/autoresponder/get_aweber_lists
 
 ```php
 {
