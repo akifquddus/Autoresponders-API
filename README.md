@@ -77,6 +77,38 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/get_aweber_lists
 }
 ```
 
+## Aweber - Add a new Subscriber
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/aweber_add_subscriber
+
+```php
+{
+    'name': 'Akif Khan',
+    'list': 33234335,
+    'email': 'akifquddus@gmail.com',
+    'consumer_key': 'Az4kjq2j6uYdAGtnsT313pb2',
+    'consumer_secret': 'h3Y16gE0mKsOOzOAtDQ3xiYF4n3WphMh8TX2OvNM',
+    'access_key': 'Agyl3A7x3ZLui2tQnD310siW',
+    'access_secret': '93SnHZTw3Om4QeINUhU1McpPyPKlTWbnlcIICWDW'
+}
+```
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Subscriber added to the list successfully"
+}
+```
+
+### Error
+```json
+{
+    "success": false,
+    "message": "Error message here"
+}
+```
+
 ## Connect GetResponse
  - There is one method for both GetResponse Connection and Fetching Lists
 
