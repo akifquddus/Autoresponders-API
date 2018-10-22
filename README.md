@@ -218,3 +218,30 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_connect_lists
 }
 ```
 
+## Mailchimp - Add a new Subscriber
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_add_subscriber
+```php
+{
+    'key': '25d41b5ff4c334e6a3af6b5c5c3d1b02-us15'
+    'name': 'Akif Khan',
+    'email': 'akifquddus@gmail.com',
+    'list': '8ebfb037f1'
+}
+```
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Subscriber is added to the list successfully"
+}
+```
+
+### Error
+```json
+{
+    "success": false,
+    "message": "Could not add the Subscriber"
+}
+```
