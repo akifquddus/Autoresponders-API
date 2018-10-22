@@ -10,7 +10,7 @@ https://auth.aweber.com/1.0/oauth/authorize_app/2ec81ef1
 **Frontend Form:** http://prntscr.com/l8kx0g
 
 Send a POST Request to:
-http://serverurl.com/autoresponder/aweber_connect
+http://aq-tech.net/Danny/Autoresponders/autoresponder/aweber_connect
 
 ```php
 {
@@ -43,7 +43,7 @@ http://serverurl.com/autoresponder/aweber_connect
 
 ## Get Aweber Lists
 Send a POST Request to:
-http://serverurl.com/autoresponder/get_aweber_lists
+http://aq-tech.net/Danny/Autoresponders/autoresponder/get_aweber_lists
 
 ```php
 {
@@ -86,7 +86,7 @@ https://app.getresponse.com/api
 **Frontend Form:** http://prntscr.com/l8kx9h
 
 Send a POST Request to:
-http://serverurl.com/autoresponder/getresponse_connect_lists
+http://aq-tech.net/Danny/Autoresponders/autoresponder/getresponse_connect_lists
 
 ```php
 {
@@ -126,7 +126,7 @@ https://us8.admin.mailchimp.com/account/api/
 **Frontend Form:** http://prntscr.com/l8kxo0
 
 Send a POST Request to:
-http://serverurl.com/autoresponder/mailchimp_connect_lists
+http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_connect_lists
 
 ```php
 {
