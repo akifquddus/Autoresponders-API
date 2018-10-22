@@ -116,6 +116,35 @@ If the response is success, then API Key is safe to be stored in Database, other
     "message": "Please add lists to your account"
 }
 ```
+## GetResponse - Add a new Subscriber
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/getresponse_add_subscriber
+
+```php
+{
+    'key': '5187caf7bc233b3356283541cc7835e3',
+    'name': 'Akif Quddus',
+    'email': 'akifquddus@gmail.com',
+    'list': 'atHvP'
+}
+```
+### Success
+
+```json
+{
+    "success": true,
+    "message": "Subscriber is added to the list successfully"
+}
+```
+
+### Error
+
+```json
+{
+    "success": false,
+    "message": "Could not add subscriber - It is possible that subscriber is already in the list"
+}
+```
 
 ## Connect Mailchimp
  - There is one method for both Mailchimp Connection and Fetching Lists
