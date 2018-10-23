@@ -249,8 +249,7 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_add_subscriber
 ## Connect iContact
  - There is one method for both iContact Connection and Fetching Lists
 
-**User can generate his App Key from this URL:**
-----
+**User can generate his App Key from this URL:** Some URL here
 
 **Frontend Form:** ----
 
@@ -260,7 +259,7 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_connect_lists
 ```php
 {
     'key': 'f719280b52746bbf9e39e0632c0e764e',
-    'username': akifkhan113@hotmail.com,
+    'username': 'akifkhan113@hotmail.com',
     'password': '10agS25vmuoVUNTDzyrnqRBE'
 }
 ```
