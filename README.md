@@ -270,7 +270,7 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_connect_lists
 {
     "success": true,
     "message": "Lists Retrieved Successfully",
-    "list": {
+    "lists": {
         "33400": "My First List",
         "33401": "NewList for Webinar"
     }
