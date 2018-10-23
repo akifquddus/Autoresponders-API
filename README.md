@@ -287,3 +287,33 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_connect_lists
     "message": "Could not retrieve lists"
 }
 ```
+
+## iContact - Add a new Subscriber
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_add_subscriber
+```php
+{
+    'key': 'f719280b52746bbf9e39e0632c0e764e',
+    'username': 'akifkhan113@hotmail.com',
+    'password': '10agS25vmuoVUNTDzyrnqRBE',
+    'name': 'Akif Khan',
+    'email': 'akifquddus@gmail.com',
+    'list': '33400'
+}
+```
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Subscriber added to the list successfully"
+}
+```
+
+### Error
+```json
+{
+    "success": false,
+    "message": "Could not add the Subscriber"
+}
+```
