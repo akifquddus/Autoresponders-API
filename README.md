@@ -249,9 +249,9 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_add_subscriber
 ## Connect iContact
  - There is one method for both iContact Connection and Fetching Lists
 
-**User can generate his App Key from this URL:** Some URL here
+**User can generate his App Key from this URL:** https://app.icontact.com/icp/core/registerapp
 
-**Frontend Form:** ----
+**Frontend Form:** http://prntscr.com/l9j3nh
 
 Send a POST Request to:
 http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_connect_lists
