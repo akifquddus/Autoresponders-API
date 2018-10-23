@@ -47,10 +47,10 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/get_aweber_lists
 
 ```php
 {
-    'consumer_key': 'Az4kjq2j6uYdAGtnsT313pb2',
-    'consumer_secret': 'h3Y16gE0mKsOOzOAtDQ3xiYF4n3WphMh8TX2OvNM',
-    'access_key': 'Agyl3A7x3ZLui2tQnD310siW',
-    'access_secret': '93SnHZTw3Om4QeINUhU1McpPyPKlTWbnlcIICWDW'
+    'consumer_key': '*****************',
+    'consumer_secret': '*******************',
+    'access_key': '*****************',
+    'access_secret': '******************'
 }
 ```
 
