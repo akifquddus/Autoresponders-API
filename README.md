@@ -245,3 +245,46 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/mailchimp_add_subscriber
     "message": "Could not add the Subscriber"
 }
 ```
+
+## Connect iContact
+ - There is one method for both iContact Connection and Fetching Lists
+
+**User can generate his App Key from this URL:**
+----
+
+**Frontend Form:** ----
+
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/icontact_connect_lists
+
+```php
+{
+    'key': 'f719280b52746bbf9e39e0632c0e764e',
+    'username': akifkhan113@hotmail.com,
+    'password': '10agS25vmuoVUNTDzyrnqRBE'
+}
+```
+**_If the response is Success, need to save the API Key, Username and Password for further operations._**
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Lists Retrieved Successfully",
+    "list": {
+        "33400": "My First List",
+        "33401": "NewList for Webinar"
+    }
+}
+```
+
+### Error
+```json
+{
+    "0": [
+        "The password you provided was not recognized."
+    ],
+    "success": false,
+    "message": "Could not retrieve lists"
+}
+```
