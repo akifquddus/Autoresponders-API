@@ -24,10 +24,10 @@ http://aq-tech.net/Danny/Autoresponders/autoresponder/aweber_connect
 {
     "success": true,
     "access_code": "AzwEvS8G71NE5KRGV20hO4XH|23chLovyne3LiXTIdFWOkZ7OHyZTUcPedLnDMjTG|AqzucBMvq02chmQANO0Zrt3H|X5xCMsBjAuzYOX7190bxX8ggTr3l7RLKASRe65Z7|kwa5x1|",
-    "access_key": "Ag2mEsZJNMSMqCFCqg0qJUfI",
-    "access_secret": "Bzxi2cWetfzkOn2hdMzVAPE7OuCsZ7BOCO1WaiIz",
-    "consumer_key": "AzwEvS8G71NE5KRGV20hO4XH",
-    "consumer_secret": "23chLovyne3LiXTIdFWOkZ7OHyZTUcPedLnDMjTG"
+    "access_key": "************************",
+    "access_secret": "**********************",
+    "consumer_key": "************************",
+    "consumer_secret": "*****************"
 }
 ```
 **_The whole return Data needs to be stored in Database for future use. The access_code is saved only for reference, it is not useable more than once. Rest four attributes will be used in all further requests._**
