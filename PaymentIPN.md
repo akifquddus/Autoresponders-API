@@ -4,7 +4,7 @@ Payments IPN Documentation for JvZoo and PayDot
 ## JvZoo
 **IPN URL:** http://aq-tech.net/Danny/Autoresponders/paymentIPN/jvzoo_ipn
 
-*_For testing, following data can be sent to the IPN URL using X-WWW-FORM-URLENCODED [JvZoo Standard]_*
+**_For testing, following data can be sent to the IPN URL using X-WWW-FORM-URLENCODED [JvZoo Standard]_**
 
 ```php
 {
@@ -30,7 +30,7 @@ Payments IPN Documentation for JvZoo and PayDot
 ```
 *The API will receive the data, verify the authenticity, once verified, will send the same Data to WebinarHD API Endpoint, Using Content Type Content-Type: application/x-www-form-urlencoded [This can be changed as per your requirements]*
 
-Following response is expected from WebinarHD:
+#### Following response is expected from WebinarHD:
 ### Success
 ```php
 {
@@ -39,7 +39,7 @@ Following response is expected from WebinarHD:
     'username': "akifquddus",
     'password': "password",
 ```
-*_In case of Success, User will receive a certain email as per his Product_*
+**_In case of Success, User will receive a certain email as per his Product_**
 
 ### Error
 ```php
@@ -48,5 +48,5 @@ Following response is expected from WebinarHD:
     'message': 'Details of Error message'
 }
 ```
-*_In case of error returned, Danny will receive an email with Customer Name and Email._*
+**_In case of error returned, Danny will receive an email with Customer Name and Email._**
 
