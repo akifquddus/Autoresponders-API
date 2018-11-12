@@ -3,45 +3,19 @@ Zapier API Documentation for WebinarHD
 
 ## Steps to be done:
 **1.** Under the Integration Settings, Add a new option for Zapier. Provide a button to generate an API Key. On clicking that button, user will be given a Unique API Key, that could be the Primary Key.
-**2.**
-**IPN URL:** http://aq-tech.net/Danny/Autoresponders/paymentIPN/jvzoo_ipn
 
-**_For testing, following data can be sent to the IPN URL using X-WWW-FORM-URLENCODED [JvZoo Standard]_**
+**2.** Provide an endpoint to verify the Key
+**Example Endpoint:** https://app.webinarhd.com/zapier
 
-```php
-{
-  "caffitid": "",
-  "ccustcc": "US",
-  "ccustemail": "dannydevries@me.com",
-  "ccustname": "Kimberly de Vries",
-  "ccuststate": "",
-  "cproditem": "312926",
-  "cprodtitle": "WebinarHD Agency Unlimited",
-  "cprodtype": "STANDARD",
-  "ctransaction": "SALE",
-  "ctransaffiliate": "111759",
-  "ctransamount": "0.01",
-  "ctranspaymentmethod": "PYPL",
-  "ctransreceipt": "5RB839805Y3999117",
-  "ctranstime": "1540400469",
-  "ctransvendor": "398549",
-  "cupsellreceipt": "",
-  "cvendthru": "c=TP-Hty1bXzdULqeWTnVVdpM",
-  "cverify": "C04783F3"
-}
-```
-*The API will receive the data, verify the authenticity, once verified, will send the same Data to WebinarHD API Endpoint, Using Content Type Content-Type: application/x-www-form-urlencoded [This can be changed as per your requirements]*
+**_For verification, following data will be sent to the above URL using X-WWW-FORM-URLENCODED. Expected Response: _**
 
-#### Following response is expected from WebinarHD:
 ### Success
 ```php
 {
     'success': true,
-    'message': 'User is created successfully',
-    'username': "akifquddus",
-    'password': "password",
+}
 ```
-**_In case of Success, User will receive a certain email as per his Product_**
+**_In case of Success, User app will be verified in his Zapier Account_**
 
 ### Error
 ```php
@@ -50,5 +24,33 @@ Zapier API Documentation for WebinarHD
     'message': 'Details of Error message'
 }
 ```
-**_In case of error returned, Danny will receive an email with Customer Name and Email._**
+
+**3.** At the event of each new subscriber, send the Name and Email of the Subscriber on following endpoint. 
+
+Send a POST Request to:
+http://aq-tech.net/Danny/Autoresponders/autoresponder/zapier_add_subscriber
+
+```php
+{
+    'name': 'Akif Khan',
+    'api_key': **********************,
+    'email': 'akifquddus@gmail.com'
+}
+```
+
+### Success
+```json
+{
+    "success": true,
+    "message": "Subscriber has been added to the queue"
+}
+```
+
+### Error
+```json
+{
+    "success": false,
+    "message": "Error message here"
+}
+```
 
