@@ -9,6 +9,12 @@ Zapier API Documentation for WebinarHD
 
 **_For verification, following data will be sent to the above URL using X-WWW-FORM-URLENCODED. Expected Response: _**
 
+```php
+{
+    'api_key': '*******************',
+}
+```
+
 ### Success
 ```php
 {
